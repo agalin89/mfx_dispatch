@@ -18,11 +18,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#if defined(_WIN32) || defined(_WIN64) || defined(__CYGWIN__)
 #include <Windows.h>
 #include <stringapiset.h>
-
-#include <new>
-#include <memory>
+#endif
 
 #include "mfx_dispatcher.h"
 #include "mfx_load_dll.h"
